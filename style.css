@@ -1,0 +1,76 @@
+body { 
+    margin: 0; 
+    font-family: "Segoe UI", sans-serif; 
+    background: #f9f9f9; 
+    color: #333; 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px 10px; 
+} 
+.todo-container { 
+    background: #fff; 
+    padding: 24px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10); 
+    width: 100%; 
+    max-width: 400px; 
+} 
+ 
+h1 { 
+    text-align: center; 
+    color: #000; 
+} 
+.input-group { 
+    display: flex; 
+    margin-bottom: 18px; 
+} 
+ 
+ 
+input[type="text"] { 
+    flex: 1; 
+    padding: 10px; 
+    border-radius: 8px 0 0 8px; 
+    border: 1px solid #ccc; 
+} 
+button.agregar-btn { 
+    padding: 10px 14px; 
+    background: #000; 
+    color: #fff; 
+    border: none; 
+    border-radius: 0 8px 8px 0; 
+    cursor: pointer; 
+} 
+ul { 
+    list-style: none; 
+    padding: 0; 
+} 
+li { 
+    background: #f1f1f1; 
+    margin-bottom: 8px; 
+    padding: 10px 14px; 
+    border-radius: 8px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+.actions button { 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    color: #000; 
+} 
+@media (max-width: 480px) { 
+    .todo-container { 
+        padding: 12px; 
+        max-width: 100%; 
+    } 
+    .input-group { 
+        flex-direction: column; 
+    } 
+    input[type="text"], button.agregar-btn { 
+        width: 100%; 
+        border-radius: 8px; 
+        margin-bottom: 8px; 
+    } 
+} 
